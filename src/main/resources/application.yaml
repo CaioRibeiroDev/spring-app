@@ -1,0 +1,23 @@
+server:
+  port: 3003
+spring:
+  datasource:
+    username: docker_user
+    password: docker_password
+    url: jdbc:postgresql://localhost:9876/docker_db
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        format_sql: true
+        show_sql: false
+
+aws:
+  region:
+  credentials:
+    access-key:
+    secret-key:
+  bucket:
+    name:
